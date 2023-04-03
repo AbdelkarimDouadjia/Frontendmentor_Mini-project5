@@ -1,0 +1,175 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Extra Large */
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+/* End Global Rules */
+/* Start Main */
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 375px;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 3px 2px 15px 0px #aaa;
+}
+.card .content {
+  padding: 20px 30px;
+}
+.container .card .image img {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+}
+.container .card h1 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+}
+.container .card p {
+  padding: 0 10px;
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.container .card section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  font-size: 12px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 15px;
+}
+.container .card section div img {
+  width: 40px;
+  max-width: 100%;
+}
+.container .card section .plan {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.container .card section div .text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: space-between;
+  margin-left: 12px;
+}
+.container .card section div .text h3 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  letter-spacing: -0.5px;
+  margin-bottom: 3px;
+}
+.container .card section div .text span {
+  color: hsl(224, 23%, 55%);
+}
+
+.container .card section a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.container .card button {
+  width: 100%;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 12px;
+}
+.container .card button:first-of-type {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 1px 13px 20px 0px rgb(31 47 86 / 45%);
+  margin-bottom: 10px;
+}
+.container .card button:last-child {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: hsl(224, 23%, 55%);
+}
+
+/* Active States */
+.container .card button:hover:last-child {
+  cursor: pointer;
+  color: black;
+}
+.container .card button:hover:first-of-type {
+  cursor: pointer;
+  background-color: hsl(224, 23%, 55%);
+}
+.container .card section a:hover {
+  cursor: pointer;
+  color: hsl(224, 23%, 55%);
+}
+/* End Main */
