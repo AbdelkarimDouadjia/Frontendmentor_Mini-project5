@@ -6,7 +6,15 @@
 }
 body {
   font-family: "Red Hat Display", sans-serif;
-  background-color: hsl(225, 100%, 94%);
+  background: url(./images/pattern-background-desktop.svg), #e1e9ff;
+  background-repeat: no-repeat, no-repeat;
+}
+/* Small Screen */
+@media (max-width: 375px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg), #e1e9ff;
+    background-repeat: no-repeat, no-repeat;
+  }
 }
 .container {
   padding-left: 15px;
@@ -42,7 +50,7 @@ body {
 /* End Global Rules */
 /* Start Main */
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
